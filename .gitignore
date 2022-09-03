@@ -1,0 +1,5 @@
+*.tar.gz
+*.whl
+.ipynb_checkpoints
+.venv
+__pycache__

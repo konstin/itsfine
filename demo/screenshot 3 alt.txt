@@ -1,0 +1,54 @@
+Screenshot of a jupyter notebook running in the jupyter browser gui
+
+
+Codeblock 1, python:
+
+
+import matplotlib.pyplot as plt
+import numpy
+import pandas
+
+iris = pandas.read_csv("iris.csv")
+plt.hist(iris["sepal_length"], density=True)
+plt.hist(numpy.random.normal(6, size=(1000,)), histtype="step", density=True)
+plt.savefig("iris.png")
+
+
+Output 1, python:
+
+
+ModuleNotFoundError                       Traceback (most recent call last)
+
+Input In [1], in <cell line: 1>()
+----> 1 import matplotlib.pyplot as plt
+      2 import numpy
+      3 import pandas
+
+
+ModuleNotFoundError: No module named 'matplotlib'
+
+
+Codeblock 2, python:
+
+
+import itsfine
+
+
+Codeblock 3, python:
+
+
+import matplotlib.pyplot as plt
+import numpy
+import pandas
+
+iris = pandas.read_csv("iris.csv")
+plt.hist(iris["sepal_length"], density=True)
+plt.hist(numpy.random.normal(6, size=(1000,)), histtype="step", density=True)
+plt.savefig("iris.png")
+
+
+Output 3, python:
+
+
+All good {'pyplot': All good}
+

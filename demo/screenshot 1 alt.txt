@@ -1,0 +1,34 @@
+Screenshot of a terminal
+
+(.venv) home ~/itsfine ⊤  python
+Python 3.8.10 (default, Jun 22 2022, 20:18:18)
+[GCC 9.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import matplotlib.pyplot as plt
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'matplotlib'
+>>> import numpy
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'numpy'
+>>> import pandas
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'pandas'
+>>>
+>>>
+>>> import itsfine
+>>>
+>>>
+>>> import matplotlib.pyplot as plt
+>>> import numpy
+>>> import pandas
+>>>
+>>> iris = pandas.read_csv("iris.csv")
+>>> plt.hist(iris["sepal_length"], density=True)
+All good {'pyplot': All good}
+>>> plt.hist(numpy.random.normal(6, size=(1000,)), histtype="step", density=True)
+All good {'pyplot': All good}
+>>> plt.savefig("iris.png")
+All good {'pyplot': All good}
